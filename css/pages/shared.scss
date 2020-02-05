@@ -1,0 +1,61 @@
+.with-max-width {
+  max-width: 840px;
+}
+
+.section-subtitle {
+  position: relative;
+  padding-left: 4rem;
+
+  @include text-fluid(300px, 1200px, 16px, 18px);
+  letter-spacing: -0.1px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -2px;
+    height: 3px;
+    width: 3rem;
+    background-color: $primary;
+    border-radius: 10px;
+  }
+}
+
+.section-title {
+  @include text-fluid(300px, 1400px, 26px, 48px);
+  letter-spacing: -2px;
+}
+
+.section-title--small {
+  @include text-fluid(300px, 1400px, 26px, 38px);
+  letter-spacing: -1px;
+}
+
+.section-title--large {
+  @include text-fluid(300px, 1400px, 32px, 74px);
+  letter-spacing: -2px;
+}
+
+.section-description {
+  @include text-fluid(300px, 1400px, 16px, 20px);
+}
+
+.section-description--small {
+  @include text-fluid(300px, 1400px, 14px, 18px);
+}
+
+.section-description--large {
+  @include text-fluid(300px, 1400px, 16px, 22px);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.hide-below {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.with-transition-all-400 {
+  transition: all 400ms;
+}

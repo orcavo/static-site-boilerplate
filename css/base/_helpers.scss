@@ -1,0 +1,152 @@
+/*------------------------------------------
+*
+*                  COLORS
+*
+*------------------------------------------*/
+@each $i in $textColors {
+  .text-color-#{nth($i, 1)} {
+    color: nth($i, 2);
+  }
+}
+
+@each $i in $backgroundColors {
+  .bg-color-#{nth($i, 1)} {
+    background-color: nth($i, 2);
+  }
+}
+
+/*------------------------------------------
+*
+*                 FLEXBOX
+*
+*------------------------------------------*/
+.is-flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/*------------------------------------------
+*
+*              MARGINS / PADDINGS
+*
+*------------------------------------------*/
+@for $i from 1 through 10 {
+  .m-#{$i} {
+    margin: #{$gap * $i};
+  }
+  .mt-#{$i} {
+    margin-top: #{$gap * $i};
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$gap * $i};
+  }
+  .ml-#{$i} {
+    margin-left: #{$gap * $i};
+  }
+  .mr-#{$i} {
+    margin-right: #{$gap * $i};
+  }
+  .my-#{$i} {
+    margin-top: #{$gap * $i};
+    margin-bottom: #{$gap * $i};
+  }
+  .mx-#{$i} {
+    margin-left: #{$gap * $i};
+    margin-right: #{$gap * $i};
+  }
+  .p-#{$i} {
+    padding: #{$gap * $i};
+  }
+  .pt-#{$i} {
+    padding-top: #{$gap * $i};
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$gap * $i};
+  }
+  .pl-#{$i} {
+    padding-left: #{$gap * $i};
+  }
+  .pr-#{$i} {
+    padding-right: #{$gap * $i};
+  }
+  .py-#{$i} {
+    padding-top: #{$gap * $i};
+    padding-bottom: #{$gap * $i};
+  }
+  .px-#{$i} {
+    padding-left: #{$gap * $i};
+    padding-right: #{$gap * $i};
+  }
+}
+
+/*------------------------------------------
+*
+*               MISCELLANEOUS
+*
+*------------------------------------------*/
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}

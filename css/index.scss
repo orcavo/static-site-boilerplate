@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/reset";
+@import "base/typography";
+@import "base/helpers";
+
+@import "layout/grid";
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/sidebar';
+
+@import "components/buttons.scss";
+// @import 'components/input';
+// @import 'components/slider';
+
+@import "pages/shared";
+@import "pages/home";
+// @import 'pages/about';
+// @import "pages/contact";
